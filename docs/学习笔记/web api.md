@@ -3,9 +3,9 @@ title: web api
 date: 2022-02-08 12:40:18
 permalink: /pages/81668f/
 categories:
-  - javascript
+  - 学习笔记
 tags:
-  - 
+  - javascript
 ---
 # JS Web API
 

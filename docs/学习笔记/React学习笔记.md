@@ -4,9 +4,9 @@ title: React 学习笔记
 date: 2022-02-08 13:03:56
 permalink: /pages/99a7b4/
 categories: 
-  - React
+  - 学习笔记
 tags: 
-  - 
+  - react
 ---
 
 # React 笔记
