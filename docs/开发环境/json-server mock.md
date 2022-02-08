@@ -24,3 +24,25 @@ tags:
 - yarn add json-server -D
 - 新建文件夹 "__json_server_mock__"，并且在文件夹内新增 db.json
 - 配置 `"json-server": "json-server __json_server_mock__/db.json --watch"`
+
+## 模拟不符合Restful规范的API
+可以通过设置中间件来模拟，示例：
+```javascript
+// __json_server_mock__/middleware.js
+module.exports = (req, res, next) => {
+    if (req.method === 'POST' && req.path === '/login') {
+        if (req.body.username === 'jack' && req.body.password === '123123') {
+            return res.status(200).json({
+                user: {
+                    token: '123'
+                }
+            })
+        } else {
+            return res.status(400).json({ message: '用户名或密码错误' })
+        }
+    }
+    next()
+}
+```
+
+- json-server 配置添加 `--middlewares ./__json_server_mock__/middleware.js`
