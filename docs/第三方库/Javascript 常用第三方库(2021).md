@@ -1,7 +1,7 @@
 ---
 
 title: Javascript 常用第三方库(2021)
-date: 2022-02-08 14:44:31
+date: 2021-08-14 14:44:31
 permalink: /pages/115fcf/
 categories:
   - 第三方库
@@ -12,16 +12,15 @@ tags:
 
 ## 日期处理类库
 
-### [Moment.js](http://momentjs.cn/)
+### [Moment.js](http://momentjs.cn/) 
+现在推荐用 [day.js](https://dayjs.gitee.io/zh-CN/) 大同小异
 
 安装
 
 ```
 npm install moment --save   # npm
 yarn add moment             # Yarn
-Install-Package Moment.js   # NuGet
-spm install moment --save   # spm
-meteor add momentjs:moment  # meteor
+pnpm install moment         # pnpm
 ```
 
 引入
